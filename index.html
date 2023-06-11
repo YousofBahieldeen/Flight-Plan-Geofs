@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="./yellow.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Flight Plan</title>
+</head>
+<body>
+    <div class="Info">
+        <div>
+            <span class="bti">
+                FROM:
+                <input type="text" class="ICAO" id="DEP">
+            </span>
+            
+            <span class="bti">
+                TO: <input type="text" class="ICAO" id="ARV">
+            </span>
+
+            <datalist id="sug" class="suge">
+                <option value="YSSY"></option>
+                <option value="LGFP"></option>
+                <option value="HEAT"></option>
+                <option value="HECA"></option>
+            </datalist>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="button-plane">Choose Your Plane</button>
+            <div class="dropdown-content">
+                <a href="#" id="737">Beoing 737-700 </a>
+                <a href="#" id="172">Cessna 172</a>
+                <a href="#" id="380">Airbus A380-800</a>
+                <a href="#" id="320">Airbus A320-214</a>
+                <a href="#" id="DHC6">DHC6 Twin Otter</a>
+                <a href="#" id="PHE">Embraer Phenom 100</a>
+                <a href="#" id="F16">F-16C Fighting Falcon</a>
+
+            </div>
+        </div>
+        <div class="PlaneStats">
+            <p id="PlaneUse">Plane That You Are Using</p>
+        </div>
+        <div class="Generate_Button">
+            <button class="Gbutton" id="Gebutton">Generate Flight Plane</button>
+        </div>
+    </div>
+    <script src="airports.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
